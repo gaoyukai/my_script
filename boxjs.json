@@ -1,860 +1,860 @@
 {
     "id": "fokit.app.sub",
     "name": "FoKit 应用订阅",
-    “作者”：“@FoKit”，
-    “图标”：“https://avatars.githubusercontent.com/u/44187836”，
-    “repo”：“https://github.com/FoKit”，
-    “应用”： [
+    "author": "@FoKit",
+    "icon": "https://avatars.githubusercontent.com/u/44187836",
+    "repo": "https://github.com/FoKit",
+    "apps": [
         {
-            “id”：“ql”，
+            "id": "ql",
             "name": "数据同步",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                《用于JD1/JD2和BoxJS之间的数据同步》
+            "author": "@FoKit",
+            "descs_html": [
+                "用于JD1/JD2和BoxJS之间的数据同步"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/sync.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/sync.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/sync.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/sync.png"
             ],
-            “脚本”：[
+            "scripts": [
                 {
                     "name": "JD1同步到BoxJS",
-                    “脚本”：“https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jd1_sync_box.js”
+                    "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jd1_sync_box.js"
                 },
                 {
                     "name": "JD2同步到BoxJS",
-                    “脚本”：“https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jd2_sync_box.js”
+                    "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jd2_sync_box.js"
                 }
             ],
-            “钥匙”：[
-                “@ql.ip_jd1”，
-                “@ql.client_id_jd1”，
-                “@ql.client_secret_jd1”，
-                "@ql.用户名_jd1",
-                “@ql.password_jd1”，
-                “@ql.env_jd1”，
-                “@ql.mute_jd1”，
-                “@ql.is_pwd_jd1”，
-                “@ql.ip_jd2”，
-                “@ql.client_id_jd2”，
-                “@ql.client_secret_jd2”，
-                "@ql.用户名_jd2",
-                “@ql.password_jd2”，
-                “@ql.env_jd2”，
-                “@ql.mute_jd2”，
-                “@ql.is_pwd_jd2”
+            "keys": [
+                "@ql.ip_jd1",
+                "@ql.client_id_jd1",
+                "@ql.client_secret_jd1",
+                "@ql.username_jd1",
+                "@ql.password_jd1",
+                "@ql.env_jd1",
+                "@ql.mute_jd1",
+                "@ql.is_pwd_jd1",
+                "@ql.ip_jd2",
+                "@ql.client_id_jd2",
+                "@ql.client_secret_jd2",
+                "@ql.username_jd2",
+                "@ql.password_jd2",
+                "@ql.env_jd2",
+                "@ql.mute_jd2",
+                "@ql.is_pwd_jd2"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "@ql.mute_jd1",
                     "name": "静默同步（JD1 > BoxJs）",
-                    “val”：假，
-                    “类型”：“布尔值”，
+                    "val": false,
+                    "type": "boolean",
                     "desc": "同步时不会显示通知"
                 },
                 {
                     "id": "@ql.is_pwd_jd1",
                     "name": "使用密码登陆JD1容器",
-                    “val”：假，
-                    “类型”：“布尔值”，
+                    "val": false,
+                    "type": "boolean",
                     "desc": "优先使用密码登陆"
                 },
                 {
                     "id": "@ql.ip_jd1",
-                    "name": "JD1 域名",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “占位符”：“ip：端口”
+                    "name": "JD1 Domains",
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "ip:port"
                 },
                 {
-                    "id": "@ql.用户名_jd1",
-                    "name": "JD1用户名",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "id": "@ql.username_jd1",
+                    "name": "JD1 UserName",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.password_jd1",
-                    "name": "JD1密码",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD1 PassWord",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.client_id_jd1",
-                    "name": "JD1客户端ID",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD1 Client ID",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.client_secret_jd1",
-                    "name": "JD1 客户端密钥",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD1 Client Secret",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.mute_jd2",
                     "name": "静默同步（JD2 > BoxJs）",
-                    “val”：假，
-                    “类型”：“布尔值”，
+                    "val": false,
+                    "type": "boolean",
                     "desc": "同步时不会显示通知"
                 },
                 {
                     "id": "@ql.is_pwd_jd2",
                     "name": "使用密码登陆",
-                    “val”：正确，
-                    “类型”：“布尔值”，
+                    "val": true,
+                    "type": "boolean",
                     "desc": "优先使用密码登陆"
                 },
                 {
                     "id": "@ql.ip_jd2",
-                    "name": "JD2 域名",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “占位符”：“ip：端口”
+                    "name": "JD2 Domains",
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "ip:port"
                 },
                 {
-                    "id": "@ql.用户名_jd2",
-                    "name": "JD2 用户名",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "id": "@ql.username_jd2",
+                    "name": "JD2 UserName",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.password_jd2",
-                    "name": "JD2 密码",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD2 PassWord",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.client_id_jd2",
-                    "name": "JD2客户端ID",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD2 Client ID",
+                    "val": "",
+                    "type": "text"
                 },
                 {
                     "id": "@ql.client_secret_jd2",
-                    "name": "JD2 客户端密钥",
-                    “值”：“”，
-                    “类型”：“文本”
+                    "name": "JD2 Client Secret",
+                    "val": "",
+                    "type": "text"
                 }
             ]
         },
         {
-            “id”：“工具”，
-            “名称”：“工具”，
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “自用工具”
+            "id": "tools",
+            "name": "Tools",
+            "author": "@FoKit",
+            "descs_html": [
+                "自用工具"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/debug.png"
             ],
-            “钥匙”：[
-                “是_调试”
+            "keys": [
+                "is_debug"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "is_debug",
-                    “名称”：“调试”，
-                    “val”：假，
-                    “类型”：“布尔值”，
-                    “描述”：“”
+                    "name": "Debug",
+                    "val": false,
+                    "type": "boolean",
+                    "desc": ""
                 }
             ]
         },
         {
-            "id": "j停车",
+            "id": "jparking",
             "name": "捷停车",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “捷停车签到”
+            "author": "@FoKit",
+            "descs_html": [
+                "捷停车签到"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jparking.png"
             ],
-            “脚本”：[
+            "scripts": [
                 {
                     "name": "捷停车签到",
-                    “脚本”：“https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js”
+                    "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jparking_sign.js"
                 }
             ],
-            “钥匙”：[
-                “jtc_用户ID”，
-                “jtc_任务号”
+            "keys": [
+                "jtc_userId",
+                "jtc_taskNo"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "jtc_userId",
                     "name": "用户ID",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
-                    "占位符": "userId1@userId2",
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
+                    "placeholder": "userId1@userId2",
                     "desc": "多个ID@隔开"
                 },
                 {
                     "id": "jtc_taskNo",
-                    "名称": "任务ID",
+                    "name": "任务ID",
                     "val": "T71811221608",
-                    “类型”：“文本”，
-                    “占位符”：“T71811221608”，
+                    "type": "text",
+                    "placeholder": "T71811221608",
                     "desc": "默认 T71811221608 可留空"
                 }
             ]
         },
         {
-            "id": "微博",
+            "id": "weibo",
             "name": "新浪微博",
-            “作者”：“@sunert”，
-            “descs_html”：[
-                "<h4align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js\">配置说明</a></h4>”，
-                “<br/>”，
-                "<p>其中<font color='#FF0000',font-weight:bold>wb_nick</font>为账号昵称，另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，任选，sy_token_wb为微博签到token，必选</p>"
+            "author": "@sunert",
+            "descs_html": [
+                "<h4 align=\"center\">获取Cookie以及脚本配置请查看<a href=\"https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js\">配置说明</a></h4>",
+                "<br />",
+                "<p>其中<font color='#FF0000',font-weight: bold>wb_nick</font>为账号昵称，无需另外获取，脚本运行可自动生成，wb_cookie为任务红包余额，获取后方可显示，可选，sy_token_wb为微博签到token，必选</p>"
             ],
-            “图标”：[
+            "icons": [
                 "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Alpha/weibo.png",
-                “https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png”
+                "https://cdn.jsdelivr.net/gh/Orz-3/mini@master/Color/weibo.png"
             ],
-            "脚本": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js",
-            “钥匙”：[
-                “sy_token_wb”，
-                “wb_cookie”，
-                “wb_尼克”
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weibo_sign.js",
+            "keys": [
+                "sy_token_wb",
+                "wb_cookie",
+                "wb_nick"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“sy_token_wb”，
-                    “名称”：“令牌”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    "desc": "微博代币"
+                    "id": "sy_token_wb",
+                    "name": "Token",
+                    "val": "",
+                    "type": "text",
+                    "desc": "微博Token"
                 },
                 {
-                    “id”：“wb_cookie”，
-                    “名称”：“饼干”，
-                    “值”：“”，
-                    “类型”：“文本”，
+                    "id": "wb_cookie",
+                    "name": "Cookie",
+                    "val": "",
+                    "type": "text",
                     "desc": "微博Cookie"
                 },
                 {
-                    “id”：“wb_nick”，
+                    "id": "wb_nick",
                     "name": "昵称",
-                    “值”：“”，
-                    “类型”：“文本”，
+                    "val": "",
+                    "type": "text",
                     "desc": "微博昵称"
                 }
             ]
         },
         {
-            "id": "正在分析",
+            "id": "Analyzing",
             "name": "活动解析",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “用于解析京东活动数据”
+            "author": "@FoKit",
+            "descs_html": [
+                "用于解析京东活动数据"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/analyzing.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/analyzing.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/analyzing.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/analyzing.png"
             ],
-            “钥匙”：[
-                “TG_BOT_TOKEN”，
-                “TG_USER_ID”，
-                “引述”
+            "keys": [
+                "TG_BOT_TOKEN",
+                "TG_USER_ID",
+                "QUOTATION"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“TG_BOT_TOKEN”，
-                    “名称”：“TG_BOT_TOKEN”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “占位符”：“123456：abcdefgabcdefgabcdefg”，
-                    "desc": "填写Telegram机器人的Token，格式：123456:abcdefgabcdefgabcdefg"
+                    "id": "TG_BOT_TOKEN",
+                    "name": "TG_BOT_TOKEN",
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "123456:abcdefgabcdefgabcdefg",
+                    "desc": "填写 Telegram 机器人的 Token，格式：123456:abcdefgabcdefgabcdefg"
                 },
                 {
                     "id": "TG_USER_ID",
                     "name": "TG群组ID",
-                    “类型”：“文本”，
-                    “值”：“-1001589058412”，
-                    “占位符”：“-100xxxxxxxx”，
+                    "type": "text",
+                    "val": "-1001589058412",
+                    "placeholder": "-100xxxxxxxx",
                     "desc": "填写TG群组ID"
                 },
                 {
-                    "id": "报价",
+                    "id": "QUOTATION",
                     "name": "随机语录",
-                    “类型”：“文本区域”，
-                    “值”：“”，
+                    "type": "textarea",
+                    "val": "",
                     "placeholder": "今天工作不努力，明天努力找工作！",
-                    “自动增长”：正确，
-                    “行”：1，
-                    "desc": "多条数据使用和分隔"
+                    "autoGrow": true,
+                    "rows": 1,
+                    "desc": "多条数据使用&分隔"
                 }
             ]
         },
         {
-            “id”：“wskey”，
+            "id": "wskey",
             "name": "京东WSKEY",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “用于自动抓取京东WSKEY”
+            "author": "@FoKit",
+            "descs_html": [
+                "用于自动抓取京东WSKEY"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jdjoy.png"
             ],
-            “钥匙”：[
-                “WSKEY_AUTO_UPLOAD”，
-                “WSKEY_TG_BOT_TOKEN”，
-                “WSKEY_TG_USER_ID”，
-                “wskeyList”
+            "keys": [
+                "WSKEY_AUTO_UPLOAD",
+                "WSKEY_TG_BOT_TOKEN",
+                "WSKEY_TG_USER_ID",
+                "wskeyList"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“WSKEY_AUTO_UPLOAD”，
+                    "id": "WSKEY_AUTO_UPLOAD",
                     "name": "自动提交WSKEY",
-                    “val”：正确，
-                    “类型”：“布尔值”，
-                    "desc": "启用后，抢夺的WSKEY会自动提交（上车）"
+                    "val": true,
+                    "type": "boolean",
+                    "desc": "启用后，重写抓取的WSKEY会自动提交（上车）"
                 },
                 {
-                    “id”：“WSKEY_TG_BOT_TOKEN”，
-                    "name": "Telegram机器人令牌",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    "desc": "填写Telegram机器人的Token，格式：123456:abcdefgabcdefgabcdefg"
+                    "id": "WSKEY_TG_BOT_TOKEN",
+                    "name": "Telegram机器人Token",
+                    "val": "",
+                    "type": "text",
+                    "desc": "填写 Telegram 机器人的 Token，格式：123456:abcdefgabcdefgabcdefg"
                 },
                 {
                     "id": "WSKEY_TG_USER_ID",
-                    "name": "Telegram 会话 ID",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    "desc": "填写Telegram会话ID，以集群形式保存[\"-1001701121614\"]"
+                    "name": "Telegram 会话ID",
+                    "val": "",
+                    "type": "text",
+                    "desc": "填写 Telegram 会话ID，以数组形式保存[\"-1001701121614\"]"
                 },
                 {
                     "id": "wskeyList",
                     "name": "京东WSKEY",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：假，
-                    “行”：10，
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": false,
+                    "rows": 10,
                     "desc": "京东WSKEY列表"
                 }
             ]
         },
         {
-            "id": "字符串替换",
+            "id": "string_replace",
             "name": "字符串替换",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “字符串替换工具”
+            "author": "@FoKit",
+            "descs_html": [
+                "字符串替换工具"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/default.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/default.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/default.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/default.png"
             ],
-            “钥匙”：[
-                “字符串替换”，
-                “字符串_替换_全部”
+            "keys": [
+                "string_replace",
+                "string_replace_all"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    "id": "字符串替换",
+                    "id": "string_replace",
                     "name": "规则",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
                     "desc": "示例：replace@text 多条规则以换行分隔"
                 },
                 {
-                    "id": "字符串替换全部",
+                    "id": "string_replace_all",
                     "name": "全局规则",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
                     "desc": "示例：replace@text 多条规则以换行分隔"
                 }
             ]
         },
         {
-            “id”：“token_95598”，
+            "id": "token_95598",
             "name": "南网在线Token",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “南网在线令牌”
+            "author": "@FoKit",
+            "descs_html": [
+                "南网在线Token"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/95598.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/95598.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/95598.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/95598.png"
             ],
-            “钥匙”：[
-                “令牌_95598”
+            "keys": [
+                "token_95598"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“token_95598”，
+                    "id": "token_95598",
                     "name": "南网在线Token",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
-            “id”：“12123”，
+            "id": "12123",
             "name": "交管12123",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “交管12123数据”
+            "author": "@FoKit",
+            "descs_html": [
+                "交管12123数据"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/12123.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/12123.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/12123.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/12123.png"
             ],
-            “钥匙”：[
-                “body_12123”，
-                “referer_12123”
+            "keys": [
+                "body_12123",
+                "referer_12123"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“body_12123”，
+                    "id": "body_12123",
                     "name": "交管12123_Body",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
-                    “描述”：“”
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
+                    "desc": ""
                 },
                 {
-                    “id”：“referer_12123”，
+                    "id": "referer_12123",
                     "name": "交管12123_Referer",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
             "id": "huawei_cloud",
             "name": "华为云服务",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “华为云服务Cookie”
+            "author": "@FoKit",
+            "descs_html": [
+                "华为云服务 Cookie"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/huawei.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/huawei.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/huawei.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/huawei.png"
             ],
-            “钥匙”：[
-                “华为_cookie”
+            "keys": [
+                "huawei_cookie"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "huawei_cookie",
-                    “名称”：“饼干”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "name": "Cookie",
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
-            "id": "中国电信",
+            "id": "china_telecom",
             "name": "中国电信",
-            “作者”：“@FoKit”，
-            “descs_html”：[
-                “中国电信Cookie”
+            "author": "@FoKit",
+            "descs_html": [
+                "中国电信 Cookie"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/china_telecom.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/china_telecom.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/china_telecom.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/china_telecom.png"
             ],
-            “钥匙”：[
-                “china_telecom_cookie”，
-                “china_telecom_login_url”
+            "keys": [
+                "china_telecom_cookie",
+                "china_telecom_login_url"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "china_telecom_cookie",
-                    “名称”：“饼干”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "name": "Cookie",
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 },
                 {
                     "id": "china_telecom_login_url",
-                    "name": "登录网址",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "name": "Login_url",
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
             "id": "feng.com",
             "name": "威锋论坛",
-            “作者”：“@FoKit”，
-            "脚本": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weifeng.js",
-            “descs_html”：[
-                ””
+            "author": "@FoKit",
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/weifeng.js",
+            "descs_html": [
+                ""
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/feng.png”，
-                “https://raw.githubusercontent.com/Orz-3/mini/master/Color/feng.png”
+            "icons": [
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Alpha/feng.png",
+                "https://raw.githubusercontent.com/Orz-3/mini/master/Color/feng.png"
             ],
-            “钥匙”：[
-                "feng_用户名",
-                “封_密码”,
-                “feng_token”
+            "keys": [
+                "feng_username",
+                "feng_password",
+                "feng_token"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    "id": "feng_用户名",
+                    "id": "feng_username",
                     "name": "账号",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 },
                 {
-                    "id": "feng_密码",
-                    "名称": "密码",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "id": "feng_password",
+                    "name": "密码",
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 },
                 {
                     "id": "feng_token",
-                    “名称”：“令牌”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "name": "Token",
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
-            “id”：“托马斯库克”，
+            "id": "ThomasCook",
             "name": "托迈酷客",
-            “作者”：“@FoKit”，
-            “脚本”：“https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js”，
-            “descs_html”：[
-                ””
+            "author": "@FoKit",
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/ThomasCook.js",
+            "descs_html": [
+                ""
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/ThomasCook.png"
             ],
-            “钥匙”：[
-                “ThomasCook_Cookie”
+            "keys": [
+                "ThomasCook_Cookie"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "ThomasCook_Cookie",
                     "name": "托迈酷客Cookie",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "val": "",
+                    "type": "text",
+                    "desc": ""
                 }
             ]
         },
         {
             "id": "iMaoTai",
             "name": "i茅台",
-            “作者”：“@FoKit”，
-            “脚本”： ””，
-            “descs_html”：[
-                ””
+            "author": "@FoKit",
+            "script": "",
+            "descs_html": [
+                ""
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/iMaoTai.png"
             ],
-            “钥匙”：[
-                “MT_TOKENS”，
-                “MT_PROVINCE”，
-                “MT_CITY”，
-                “MT_DISTRICT”，
-                “MT_ITEM_BLACK”，
-                “MT_版本”，
-                “MT_USERAGENT”，
-                “MT_R”
+            "keys": [
+                "MT_TOKENS",
+                "MT_PROVINCE",
+                "MT_CITY",
+                "MT_DISTRICT",
+                "MT_ITEM_BLACK",
+                "MT_VERSION",
+                "MT_USERAGENT",
+                "MT_R"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“MT_TOKENS”，
+                    "id": "MT_TOKENS",
                     "name": "i茅台Token",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
-                    “描述”：“”
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
+                    "desc": ""
                 },
                 {
                     "id": "MT_PROVINCE",
                     "name": "省份",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    "desc": "XX省/直辖市"
+                    "val": "",
+                    "type": "text",
+                    "desc": "XX省 / 直辖市"
                 },
                 {
-                    “id”：“MT_CITY”，
+                    "id": "MT_CITY",
                     "name": "城市",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    "desc": "XX市/直辖市"
+                    "val": "",
+                    "type": "text",
+                    "desc": "XX市 / 直辖市"
                 },
                 {
-                    “id”：“MT_DISTRICT”，
+                    "id": "MT_DISTRICT",
                     "name": "区域",
-                    “值”：“”，
-                    “类型”：“文本”，
+                    "val": "",
+                    "type": "text",
                     "desc": "xx区|xx区"
                 },
                 {
-                    “id”：“MT_ITEM_BLACK”，
+                    "id": "MT_ITEM_BLACK",
                     "name": "商品黑名单",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“2478|10056”
+                    "val": "",
+                    "type": "text",
+                    "desc": "2478|10056"
                 },
                 {
-                    “id”：“MT_VERSION”，
+                    "id": "MT_VERSION",
                     "name": "APP版本号",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“xxx”
+                    "val": "",
+                    "type": "text",
+                    "desc": "x.x.x"
                 },
                 {
-                    “id”：“MT_USERAGENT”，
+                    "id": "MT_USERAGENT",
                     "name": "用户标识",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“iOS；16.1.2；苹果；”
+                    "val": "",
+                    "type": "text",
+                    "desc": "iOS;16.1.2;Apple;"
                 },
                 {
-                    “id”：“MT_R”，
-                    “名称”：“MT_R”，
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “描述”：“clips_xxx”
+                    "id": "MT_R",
+                    "name": "MT_R",
+                    "val": "",
+                    "type": "text",
+                    "desc": "clips_xxx"
                 }
             ]
         },
         {
-            "id": "米体育",
+            "id": "MiSport",
             "name": "小米运动",
-            “作者”：“@FoKit”，
-            “脚本”： ””，
-            “descs_html”：[
-                ””
+            "author": "@FoKit",
+            "script": "",
+            "descs_html": [
+                ""
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/mi_sport.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/mi_sport.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/mi_sport.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/mi_sport.png"
             ],
-            “钥匙”：[
-                “xm用户”，
-                “xm密码”，
-                “xmMinStep”，
-                “xm最大步长”
+            "keys": [
+                "xmUsers",
+                "xmPasswords",
+                "xmMinStep",
+                "xmMaxStep"
             ],
-            “设置”： [
+            "settings": [
                 {
-                    “id”：“xmUsers”，
+                    "id": "xmUsers",
                     "name": "账号",
-                    “值”：“”，
-                    "占位符": "13800138000&abc123@qq.con",
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
+                    "val": "",
+                    "placeholder": "13800138000&abc123@qq.con",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
                     "desc": "多个账号使用&分隔"
                 },
                 {
-                    "id": "xm密码",
-                    "名称": "密码",
-                    “值”：“”，
-                    "占位符": "密码1&密码2",
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
+                    "id": "xmPasswords",
+                    "name": "密码",
+                    "val": "",
+                    "placeholder": "password1&password2",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
                     "desc": "多个密码使用&分隔"
                 },
                 {
                     "id": "xmMinStep",
-                    "name": "简单",
-                    “值”：“20000”，
-                    “类型”：“文本”，
-                    "desc": "随机范围最少"
+                    "name": "最小值",
+                    "val": "20000",
+                    "type": "text",
+                    "desc": "随机范围最小值"
                 },
                 {
                     "id": "xmMaxStep",
-                    "name": "顶部",
-                    “值”：“30000”，
-                    “类型”：“文本”，
-                    "desc": "随机范围顶部"
+                    "name": "最大值",
+                    "val": "30000",
+                    "type": "text",
+                    "desc": "随机范围最大值"
                 }
             ]
         },
         {
-            "id": "购买助手",
+            "id": "buy_helper",
             "name": "购物助手",
-            “作者”：“@FoKit”，
-            “脚本”： ””，
-            “descs_html”：[
-                “用于京东、京喜和京喜特价京粉转链，支持慢慢买、购物党和什么值得买创业比价。”
+            "author": "@FoKit",
+            "script": "",
+            "descs_html": [
+                "用于京东、京喜和京喜特价京粉转链，支持慢慢买、购物党和什么值得买跳转比价。"
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jingfen.png"
             ],
-            “钥匙”：[
-                “jd_unionId”，
+            "keys": [
+                "jd_unionId",
                 "jd_positionId",
-                “jtt_appid”，
-                “jtt_appkey”，
-                “buy_helper_api”，
-                “购买助手_LR”，
-                “buy_helper_zdm”，
-                “buy_helper_mmm”，
-                “buy_helper_gwd”，
-                “买_帮手_jf”
+                "jtt_appid",
+                "jtt_appkey",
+                "buy_helper_api",
+                "buy_helper_LR",
+                "buy_helper_zdm",
+                "buy_helper_mmm",
+                "buy_helper_gwd",
+                "buy_helper_jf"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "jd_unionId",
                     "name": "联盟ID",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “占位符”：“”，
-                    “描述”：“”
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "",
+                    "desc": ""
                 },
                 {
                     "id": "jd_positionId",
                     "name": "推广位ID",
-                    “值”：“”，
-                    “类型”：“文本”，
-                    “占位符”：“”，
-                    "desc": "京东联盟推广号ID"
+                    "val": "",
+                    "type": "text",
+                    "placeholder": "",
+                    "desc": "京东联盟推广位ID"
                 },
                 {
-                    “id”：“jtt_appid”，
-                    "name": "京推AppId",
-                    “值”：“”，
-                    “占位符”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "id": "jtt_appid",
+                    "name": "京推推AppId",
+                    "val": "",
+                    "placeholder": "",
+                    "type": "text",
+                    "desc": ""
                 },
                 {
-                    “id”：“jtt_appkey”，
-                    "name": "京推AppKey",
-                    “值”：“”，
-                    “占位符”：“”，
-                    “类型”：“文本”，
-                    “描述”：“”
+                    "id": "jtt_appkey",
+                    "name": "京推推AppKey",
+                    "val": "",
+                    "placeholder": "",
+                    "type": "text",
+                    "desc": ""
                 },
                 {
-                    “id”：“buy_helper_api”，
+                    "id": "buy_helper_api",
                     "name": "接口选择",
-                    “val”：“jf”，
-                    “类型”：“收音机”，
+                    "val": "jf",
+                    "type": "radios",
                     "desc": "选择需要使用的转链接口",
-                    “项目”： [
+                    "items": [
                         {
-                            “键”：“jf”，
+                            "key": "jf",
                             "label": "京粉"
                         },
                         {
-                            “关键”：“jtt”，
+                            "key": "jtt",
                             "label": "京推推"
                         }
                     ]
                 },
                 {
                     "id": "buy_helper_LR",
-                    "name": "悬浮桥",
-                    "val": "左",
-                    “类型”：“收音机”，
-                    "desc": "悬浮按钮显示位置",
-                    “项目”： [
+                    "name": "悬浮按键",
+                    "val": "left",
+                    "type": "radios",
+                    "desc": "悬浮按键显示位置",
+                    "items": [
                         {
-                            “键”：“左”，
+                            "key": "left",
                             "label": "左侧"
                         },
                         {
-                            “关键”：“正确”，
+                            "key": "right",
                             "label": "右侧"
                         }
                     ]
                 },
                 {
-                    “id”：“buy_helper_zdm”，
+                    "id": "buy_helper_zdm",
                     "name": "值得买",
-                    “val”：正确，
-                    “类型”：“布尔值”，
-                    “描述”：“”
+                    "val": true,
+                    "type": "boolean",
+                    "desc": ""
                 },
                 {
                     "id": "buy_helper_mmm",
                     "name": "慢慢买",
-                    “val”：正确，
-                    “类型”：“布尔值”，
-                    “描述”：“”
+                    "val": true,
+                    "type": "boolean",
+                    "desc": ""
                 },
                 {
-                    “id”：“buy_helper_gwd”，
+                    "id": "buy_helper_gwd",
                     "name": "购物党",
-                    “val”：正确，
-                    “类型”：“布尔值”，
-                    “描述”：“”
+                    "val": true,
+                    "type": "boolean",
+                    "desc": ""
                 },
                 {
                     "id": "buy_helper_jf",
                     "name": "京粉",
-                    “val”：正确，
-                    “类型”：“布尔值”，
-                    “描述”：“”
+                    "val": true,
+                    "type": "boolean",
+                    "desc": ""
                 }
             ]
         },
         {
-            “id”：“jhsh”，
+            "id": "jhsh",
             "name": "建行生活",
-            “作者”：“@FoKit”，
-            “脚本”：“https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js”，
-            “descs_html”：[
-                ””
+            "author": "@FoKit",
+            "script": "https://raw.githubusercontent.com/FoKit/Scripts/main/scripts/jhsh_checkIn.js",
+            "descs_html": [
+                ""
             ],
-            “图标”：[
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jhsh.png”，
-                “https://raw.githubusercontent.com/FoKit/Scripts/main/images/jhsh.png”
+            "icons": [
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jhsh.png",
+                "https://raw.githubusercontent.com/FoKit/Scripts/main/images/jhsh.png"
             ],
-            “钥匙”：[
-                “JHSH_BODY”，
-                “JHSH_GIFT”
+            "keys": [
+                "JHSH_BODY",
+                "JHSH_GIFT"
             ],
-            “设置”： [
+            "settings": [
                 {
                     "id": "JHSH_BODY",
                     "name": "签到数据",
-                    “值”：“”，
-                    “类型”：“文本区域”，
-                    “自动增长”：正确，
-                    “行”：1，
-                    “描述”：“”
+                    "val": "",
+                    "type": "textarea",
+                    "autoGrow": true,
+                    "rows": 1,
+                    "desc": ""
                 },
                 {
                     "id": "JHSH_GIFT",
                     "name": "奖励类型",
-                    “值”：“2”，
-                    “类型”：“收音机”，
+                    "val": "2",
+                    "type": "radios",
                     "desc": "选择连续签到奖励类型",
-                    “项目”： [
+                    "items": [
                         {
-                            “关键”：“1”，
+                            "key": "1",
                             "label": "打车券"
                         },
                         {
-                            “关键”：“2”，
+                            "key": "2",
                             "label": "外卖券"
                         }
                     ]
