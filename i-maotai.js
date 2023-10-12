@@ -422,7 +422,7 @@ async function getActParam() {
       try {
         if (data) {
           data = JSON.parse(data).actParam;
-          // $.log("获取actParam成功", data);
+           $.log("获取actParam成功", data);
         }
       } catch (error) {
         $.log(error);
