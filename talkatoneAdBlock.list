@@ -16,3 +16,4 @@ DOMAIN-KEYWORD,googleads,REJECT
 DOMAIN-SUFFIX,adsappier.com,REJECT
 DOMAIN-SUFFIX,appier.net,REJECT
 DOMAIN-SUFFIX,appiersig.com,REJECT
+DOMAIN-SUFFIX,app-analytics-services.com,REJECT
